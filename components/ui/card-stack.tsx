@@ -61,7 +61,7 @@ export const CardStack = () => {
     <div className="flex flex-col p-8 justify-center items-center">
       <RotatingItem index={index} direction="up">
         {cards.map((card) => (
-          <div className="flex flex-col gap-2">
+          <div key={card.id} className="flex flex-col gap-2">
             <p className="font-medium text-base text-neutral-900">
               {card.title}
             </p>
